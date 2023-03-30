@@ -6,8 +6,16 @@
 @text: 'Tilt Warp', cursive;
 @first: #E05E00;
 @second: black;
-@f-size: 16px;
+@f-size: 18px;
 @photo1: 300px;
+
+/* mixins */
+.center-space (@display: flex, @justify: center, @align: center) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 * {
     margin: 0;
@@ -19,32 +27,32 @@ body {
     font-size: @f-size;
 }
 
+
+
 header {
     margin: auto;
     width: 90%;
     height: 50px;
     display: flex;
+
+    nav {
+        padding-top: 30px;
+        width: 100%;
+        .center-space
+    }
+
+    li {
+        list-style: none;
+    }
+    
+    a {
+        font-size: 40px;
+        &:hover {
+            color: @first;
+        }
+    }
 }
 
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    font-size: 40px;
-}
-
-a:hover {
-    color: @first;
-}
 
 .images {
     padding-top: 30px;
