@@ -7,15 +7,14 @@
 @first: #E05E00;
 @second: black;
 @f-size: 18px;
-@photo1: 300px;
+@photo1: 338px;
 
 /* mixins */
-.center-space (@display: flex, @justify: center, @align: center) {
+.center-space (@display: flex, @justify: space-between, @align: center) {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 * {
     margin: 0;
@@ -25,48 +24,131 @@
 
 body {
     font-size: @f-size;
+    background-color: rgb(89, 206, 200);
+
 }
 
 
+/* menu float / menu flutuante */
 
 header {
     margin: auto;
-    width: 90%;
+    padding-top: 15px;
+    width: 95%;
     height: 50px;
     display: flex;
 
     nav {
-        padding-top: 30px;
         width: 100%;
         .center-space
     }
 
+    .container-menu {
+        display: none;
+    }
+
+    .menu {
+        height: 130px;
+        width: 90px;
+        background-color: #E05E00;
+        position: absolute;
+        top: 70px;
+        left: 14px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 2.5rem;
+        color: @first;
+    }
+
+    #burguer{
+        display: block;
+    }
+
     li {
         list-style: none;
+        padding-bottom: 10px;
     }
-    
+
     a {
+        font-family: @tittle;
+        text-decoration: none;
+        color: black;
+        &:hover {
+            color: white;
+            border-bottom: 1px solid white;
+        }
+    }
+
+    h1 {
+        font-family: @text;
+        margin: auto;
+        font-size: 2rem;
+    }
+
+    .icon a {
         font-size: 40px;
+        color: green;
         &:hover {
             color: @first;
         }
     }
 }
 
+/* images / imagens */
 
-.images {
-    padding-top: 30px;
-    width: 90%;
+.slider {
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 340px;
+    height: 250px;
+    overflow: hidden;
+
+    .slides {
+        display: flex;
+        padding-top: 20px;
+        width: 200px;
+        height: 250px;
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        width: 340px;
+        position: relative;
+    }
+
+    .slide img {
+        width: 340px;
+    }
 }
 
-.images img {
-    width: @photo1;
+.manual-navigation {
+    position: absolute;
+    width: 340px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+
+    .manual-btn {
+        border: 2px solid @first;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+        
+    }
+
+
 }
+
+
+
+/* maps / mapa */
 
 .maps {
     background-color:@first;

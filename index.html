@@ -6,36 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet/less" type="text/css" href="./style.less" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
     <title>Tec Lins</title>
 </head>
 <body>
     <header>
         <nav>
-        </li>
-        <ul>
-            <li>Home</li>
-            <li>Marcas</li>
-            <li>Contato</li>
-        </ul>
-        <h1>TEC-LINS</h1>
-        <div class="icon">
-            <a href="">
+            <span class="material-symbols-outlined" id="burguer" onclick="abrirMenu()">
+                menu
+            </span>
+
+            <div id="item" class="container-menu">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./pecas.html">Peças</a></li>
+                    <li><a href="./service.html">Serviços</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </div >
+
+            <h1>TEC-LINS</h1>
+
+            <div class="icon">
+                <a href="">
                     <i class="fa fa-whatsapp"></i></a>
                 </a>
-            </div >
+            </div>
         </nav>
     </header>
 
     <section>
         <main>
-            <div class="container-images">
-                <div class="images">
-                    <img src="./assets/image/amort.png" alt="">
-                    <img src="./assets/image/emb.png" alt="">
-                    <img src="./assets/image/amort.png" alt="">
-                    <img src="./assets/image/emb.png" alt="">
-                    <img src="./assets/image/amort.png" alt="">
-                    <img src="./assets/image/emb.png" alt="">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="./assets/image/pc-1.png" alt="peças">
+                    </div >
+                    <div class="slide">
+                        <img src="./assets/image/pc-2.png" alt="peças 2">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/image/pc-3.png" alt="peças 3">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/image/pc-4.png" alt="peças 4">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
             </div>
 
@@ -80,5 +114,6 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     
     <script src="less.js" data-env="development"></script>
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="./script/main.js"></script>
 </body>
 </html>
