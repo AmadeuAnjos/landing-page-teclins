@@ -24,8 +24,6 @@
 
 body {
     font-size: @f-size;
-    background-color: rgb(89, 206, 200);
-
 }
 
 
@@ -51,9 +49,14 @@ header {
         height: 130px;
         width: 90px;
         background-color: #E05E00;
-        position: absolute;
+        position: absolute ;
         top: 70px;
         left: 14px;
+        z-index: 999;
+
+        .menu ul {
+            position: absolute !important ;
+        }
     }
 
     .material-symbols-outlined {
@@ -99,13 +102,13 @@ header {
 
 .slider {
     margin: auto;
-    width: 340px;
+    width: 350px;
     height: 250px;
     overflow: hidden;
 
     .slides {
         display: flex;
-        padding-top: 20px;
+        padding-top: 40px;
         width: 200px;
         height: 250px;
     }
@@ -115,38 +118,63 @@ header {
     }
 
     .slide {
-        width: 340px;
+        width: 200%;
         position: relative;
     }
 
     .slide img {
-        width: 340px;
+        width: 350px;
     }
 }
 
 .manual-navigation {
     position: absolute;
-    width: 340px;
-    margin-top: -20px;
+    width: 350px;
     display: flex;
     justify-content: center;
-
-    .manual-btn {
-        border: 2px solid @first;
-        padding: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-        
-    }
-
-
+    margin-top: 10px;
 }
 
+.manual-btn {
+    border: 2px solid @first;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
 
+.manual-btn:not(:last-child) {
+    margin-right: 20px;        
+}
+
+.manual-btn:hover {
+    background-color: @first;
+}
+        
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -350px;
+}
+
+#radio3:checked ~ .first {
+    margin-right: -700px;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -1050px;
+}   
+
+/* information / informações */
+
+.info {
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: justify;
+}
 
 /* maps / mapa */
 
