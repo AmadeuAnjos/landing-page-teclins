@@ -49,9 +49,10 @@ header {
         height: 130px;
         width: 90px;
         background-color: #E05E00;
+        color: white;
         position: absolute ;
         top: 70px;
-        left: 14px;
+        left: 8px;
         z-index: 999;
 
         .menu ul {
@@ -76,7 +77,7 @@ header {
     a {
         font-family: @tittle;
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
         &:hover {
             color: white;
             border-bottom: 1px solid white;
@@ -174,15 +175,73 @@ header {
     margin: auto;
     margin-top: 50px;
     text-align: justify;
+    font-family: @tittle;
 }
 
-/* maps / mapa */
+/* footer / rodapé */
 
-.maps {
-    background-color:@first;
+.container-footer {
+    background-color: @first;
+
+    .maps {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .frame-maps {
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+/* links footer / links rodapé */
+
+.links {
+    list-style: none;
+    margin-top: 40px;
+    margin-left: 10px;
+
+    li {
+        padding-bottom: 10px;
+    }
+    
+    li a {        
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+        &:hover {
+            border-bottom: 2px solid white;
+        }
+    }
+}
+
+/* icons / icones */
+
+.icons{
+    margin-top: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        font-size: 1.9rem;
+        padding: 15px;
+        color: white;
+    }
 }
 
-.frame-maps {
-    margin: auto;
+.register {
+    width: 95%;
+    margin: 20px auto 0 auto;
+    padding-bottom: 20px;
+    font-size: 0.9rem;
+    
+    p {
+        text-align: center;
+        color: white;
+    }
+
+    b {
+        color: black;
+    }
 }
