@@ -168,6 +168,39 @@ header {
     margin-left: -1050px;
 }   
 
+.navigation-auto div {
+    border: 2px solid @first;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 350px;
+    margin-top: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: @first;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: @first;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: @first;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: @first;
+}
+
 /* information / informações */
 
 .info {
