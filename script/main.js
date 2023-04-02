@@ -8,16 +8,17 @@ function abrirMenu() {
     }
 }
 
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img");
+let count = 1;
+document.getElementById("radio1").checked = true;
 
-let idx = 0;
+setInterval( function(){
+    nextImage();
+}, 4000)
 
-function carrossel() {
-    if(idx > img.length - 1){
-        idx = 0;
+function nextImage() {
+    count++;
+    if(count > 4){
+        count = 1;
     }
-    imgs.style.transform = `translate(${idx * 95}%)`;
+    document.getElementById("radio"+count).checked = true;
 }
-
-setInterval(carrossel, 1800);
