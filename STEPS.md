@@ -1,12 +1,6 @@
 ### Landing page Tec Lins Autopeça
 
-![image](https://user-images.githubusercontent.com/53497771/229659176-988fdc41-f2b1-444e-8748-9a970464e121.png)
-
-![image](https://user-images.githubusercontent.com/53497771/229659240-42263d5e-4f7b-4e6e-ac09-9957e31a50c7.png)
-
-![image](https://user-images.githubusercontent.com/53497771/229659267-ea728f7f-a788-4a25-860f-ab280d6bdd5a.png)
-
-![image](https://user-images.githubusercontent.com/53497771/229659284-aec9a9fb-298c-4459-a64d-d30f9dec858d.png)
+![interface](https://user-images.githubusercontent.com/53497771/229663788-4ff82e9f-8738-4c71-9f87-e934230fa334.png)
 
 
 ## Idea
