@@ -99,7 +99,7 @@ header {
     }
 }
 
-/* images / imagens */
+/* carrousel_one / carrosel_um */
 
 .slider {
     margin: auto;
@@ -197,6 +197,37 @@ header {
     background-color: @first;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: @first;
+}
+
+/* carrousel_dois / carrosel_dois */
+
+#radio5:checked ~ .second {
+    margin-left: 0;
+}
+
+#radio6:checked ~ .second {
+    margin-left: -350px;
+}
+
+#radio7:checked ~ .second {
+    margin-right: -700px;
+}
+
+#radio8:checked ~ .second {
+    margin-left: -1050px;
+} 
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: @first;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: @first;
+}
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background-color: @first;
+}
+#radio8:checked ~ .navigation-auto .auto-btn8{
     background-color: @first;
 }
 
