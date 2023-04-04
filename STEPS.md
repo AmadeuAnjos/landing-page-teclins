@@ -1,6 +1,6 @@
 ### Landing page Tec Lins Autopeça
 
-![interface](https://user-images.githubusercontent.com/53497771/229663788-4ff82e9f-8738-4c71-9f87-e934230fa334.png)
+![interface](https://user-images.githubusercontent.com/53497771/229763818-0422cd57-ee1a-4ee9-9d76-a83bd458344a.png)
 
 
 ## Idea
