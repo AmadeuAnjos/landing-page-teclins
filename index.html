@@ -160,7 +160,7 @@
                 </div>
                 <div id="task-two" class="task-image">
                     <img src="./assets/image/delivery.png" alt="entrega em território nacional">
-                    <p>Entregamos no Brasil inteiro.</p>
+                    <p>Entregamos em todo<br>território nacional.</p>
                 </div>
             </div>
         </div>
@@ -185,15 +185,18 @@
     <section>
         <div class="container-form">
             <div class="form">
-                <form action="">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="543451ba-af42-4ba2-aea4-f7dccfbbebbe">
+                    <input type="hidden" name="redirectTo" value="https://amadeuanjos.github.io/landing-page-teclins/">
+
                     <label for="">Nome</label>
-                    <input type="text" placeholder="Digite seu nome aqui"><br>
+                    <input type="text" name="name" placeholder="Digite seu nome aqui" required><br>
                     <label for="">E-mail</label>
-                    <input type="text" placeholder="Digite seu email aqui"><br>
+                    <input type="text" name="email" placeholder="Digite seu email aqui" required><br>
                     <label for="">Telefone</label>
-                    <input type="text" placeholder="Digite seu telefone aqui"><br>
+                    <input type="text" name="phone" placeholder="Digite seu telefone aqui" required><br>
                     <label for="">Mensagem</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Deixe sua mensagem para nós. Retonaremos o mais breve possível." style="resize: none;"></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Deixe sua mensagem para nós. Retonaremos o mais breve possível." style="resize: none;" required></textarea>
                     <div class="botao">
                         <button id="button-contact" onclick="enviar()">ENVIAR</button>
                     </div>

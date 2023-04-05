@@ -45,5 +45,5 @@ function nextImage2() {
 /* function for notification send message / função para notificar envio da menssagem */
 
 function enviar() {
-    alert('Menssagem enviada com sucesso ')
+   // alert('Mensagem enviada com sucesso ')
 }
