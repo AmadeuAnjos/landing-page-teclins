@@ -42,3 +42,8 @@ function nextImage2() {
     document.getElementById("radio"+count2).checked = true;
 }
 
+/* function for notification send message / função para notificar envio da menssagem */
+
+function enviar() {
+    alert('Menssagem enviada com sucesso ')
+}
