@@ -107,10 +107,15 @@ header {
 }
 
 /* carrousel_one / carrosel_um */
+main {
+    width: 95%;
+    margin: auto;
+}
+
 
 .slider {
     margin: auto;
-    max-width: 400px;
+    max-width: 370px;
     height: 250px;
     overflow: hidden;
 
@@ -131,13 +136,13 @@ header {
     }
 
     .slide img {
-        width: 400px;
+        width: 370px;
     }
 }
 
 .manual-navigation {
     position: absolute;
-    width: 400px;
+    width: 370px;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -157,23 +162,7 @@ header {
 
 .manual-btn:hover {
     background-color: @first;
-}
-        
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -400px;
-}
-
-#radio3:checked ~ .first {
-    margin-right: -800px;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -1200px;
-}   
+}        
 
 .navigation-auto div {
     border: 2px solid @first;
@@ -181,18 +170,34 @@ header {
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-right: 20px;
     }
 }
 
 .navigation-auto {
     position: absolute;
-    width: 400px;
+    width: 370px;
     margin-top: 220px;
     display: flex;
     justify-content: center;
 }
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -370px;
+}
+
+#radio3:checked ~ .first {
+    margin-right: -740px;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -1110;
+}   
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
     background-color: @first;
@@ -214,15 +219,15 @@ header {
 }
 
 #radio6:checked ~ .second {
-    margin-left: -400px;
+    margin-left: -370px;
 }
 
 #radio7:checked ~ .second {
-    margin-right: -800px;
+    margin-right: -740px;
 }
 
 #radio8:checked ~ .second {
-    margin-left: -1200px;
+    margin-left: -1110px;
 } 
 
 #radio5:checked ~ .navigation-auto .auto-btn5{
@@ -241,7 +246,7 @@ header {
 /* information / informações */
 
 .info {
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 50px;
     text-align: justify;
@@ -441,26 +446,7 @@ form {
 }
 
 /* screen max 480 pixels / tela maxima 480 pixels */
-@media screen and (min-width: 480px) {
-
-    /* address / endereço */
-    .address {
-        text-align: center;
-        letter-spacing: 3px;
-        h3 {
-            padding-bottom: 15px;
-        }
-    }
-    
-    /* links footer / links rodapé */
-    .links li a {           
-        font-size: 1.4rem;
-    }
-
-    /* all rights reserved / todos os direitos reservados */
-    .register p {
-        font-size: 1.1rem;
-    }
+@media screen and (min-width: 480px) {   
 
     .slider {
         margin-top: 30px;
@@ -513,10 +499,15 @@ form {
             height: 280px;
         }
 
-        /* links footer / links rodapé */
+         /* address / endereço */
+        .address {
+        text-align: center;
+        letter-spacing: 3px;
+        }
+    
+    /* links footer / links rodapé */
     .links li a {           
-        font-size: 1.5rem;
-        margin-left: 10px;
+        font-size: 1.4rem;
     }
 
     /* all rights reserved / todos os direitos reservados */
@@ -550,6 +541,7 @@ form {
     }
         .manual-navigation {
             width: 730px;
+            margin-top: 30px;
         }
                 
         #radio1:checked ~ .first, #radio5:checked ~ .second {
@@ -570,17 +562,39 @@ form {
 
         .navigation-auto {
             width: 730px;
-            margin-top: 420px;
+            margin-top: 440px;
+        }
+
+         /* address / endereço */
+         .address {
+            font-size: 1.4rem;
         }
 
         /* links footer / links rodapé */
-    .links li a {           
-        font-size: 1.8rem;
-        margin-left: 30px;
-    }
+        .links li a {           
+        font-size: 1.6rem;
+        margin-left: 20px;
+        }
 
     /* all rights reserved / todos os direitos reservados */
-    .register p {
+        .register p {
         font-size: 1.4rem;
+        margin-top: 50px;
+        }
+}
+
+@media screen and (min-width: 1024px){
+
+        header {
+         width: 90%;
+
+        #burguer {
+         display: none;
+        }
+
+        nav .item {
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
