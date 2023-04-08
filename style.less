@@ -48,7 +48,7 @@ header {
         .center-space-between
     }
 
-    .container-menu {
+    #item {
         display: none;
     }
 
@@ -63,7 +63,7 @@ header {
         z-index: 999;
 
         .menu ul {
-            position: absolute !important ;
+            position: absolute;
         }
     }
 
@@ -111,7 +111,6 @@ main {
     width: 95%;
     margin: auto;
 }
-
 
 .slider {
     margin: auto;
@@ -499,6 +498,12 @@ form {
             height: 280px;
         }
 
+        iframe {
+            display: flex;
+            width: 450px;
+            height: 300px;
+        }
+
          /* address / endereço */
         .address {
         text-align: center;
@@ -563,6 +568,22 @@ form {
         .navigation-auto {
             width: 730px;
             margin-top: 440px;
+        }        
+
+        #task-one, #task-two {
+            margin-top: 120px;
+            font-size: 1.6rem;
+        }
+
+        .task-image img {
+            width: 500px;
+            height: 320px;
+        }
+
+        iframe {
+            display: flex;
+            width: 740px;
+            height: 400px;
         }
 
          /* address / endereço */
@@ -583,18 +604,38 @@ form {
         }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px){  
 
-        header {
-         width: 90%;
+    .container-parts {
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
 
-        #burguer {
-         display: none;
-        }
+    .images-center:hover {
+        border: 1px solid rgb(134, 134, 134);
+    }
 
-        nav .item {
-            display: flex;
-            flex-direction: row;
-        }
+    #task-one, #task-two {
+        margin-top: 120px;
+        font-size: 2rem;
+    }
+
+    .task-image img {
+        width: 800px;
+        height: 470px;
+    }
+
+    .maps {
+        padding-top: 40px;
+    }
+
+    iframe {
+        display: flex;
+        width: 1180px;
+        height: 500px;
     }
 }
