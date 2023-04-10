@@ -60,7 +60,7 @@ header {
         position: absolute ;
         top: 70px;
         left: 8px;
-        z-index: 999;
+        z-index: 5;
 
         .menu ul {
             position: absolute;
@@ -606,6 +606,118 @@ form {
 
 @media screen and (min-width: 1024px){  
 
+    header {
+        margin: auto;
+        padding-top: 15px;
+        width: 95%;
+        height: 80px;
+    
+        nav {
+            background-color: #E05E00;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #item {
+            display: flex !important;
+        }
+        
+        .menu {
+            width: 100%;
+            height: 30px;
+            background-color: transparent;
+            display: flex;
+            z-index: 999;
+            li {
+                background-color: aqua;
+                width: 100%;
+                height: 30px;
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                padding: 0 15px;
+                color: black;
+            }
+        }
+    
+        .material-symbols-outlined {
+            font-size: 2.5rem;
+            color: @first;
+        }
+    
+        #burguer{
+            display: none;
+        }
+    
+        h1 {
+            font-family: @text;
+            margin: auto;
+            font-size: 2rem;
+        }
+    
+        .icon a {
+            font-size: 40px;
+            color: green;
+            &:hover {
+                color: @first;
+            }
+        }
+    }
+    
+    
+
+    .slider {
+        width: 43%;
+        height: 320px;
+        margin-left: 0;
+        
+        .slides {
+            display: flex;
+            padding-top: 40px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .slide {
+            width: 100%;
+            img {
+            width: 430px;
+            }
+        }
+    }
+        .manual-navigation {
+            width: 430px;
+            margin-top: 0;
+        }
+                
+        #radio1:checked ~ .first, #radio5:checked ~ .second {
+            margin-left: 0;
+        }
+        
+        #radio2:checked ~ .first, #radio6:checked ~ .second {
+            margin-left: -100%;
+        }
+        
+        #radio3:checked ~ .first, #radio7:checked ~ .second {
+            margin-right: -200%;
+        }
+        
+        #radio4:checked ~ .first, #radio8:checked ~ .second {
+            margin-left: -300%;
+        } 
+
+        .navigation-auto {
+            width: 430px;
+            margin-top: 280px;
+        } 
+
+    #paragraph-one {
+
+        display: flex;
+    }    
+
     .container-parts {
         margin-bottom: 40px;
         display: grid;
@@ -620,13 +732,22 @@ form {
     }
 
     #task-one, #task-two {
-        margin-top: 120px;
+        margin-top: 220px;
+        margin-bottom: 220px;
         font-size: 2rem;
     }
 
     .task-image img {
         width: 800px;
         height: 470px;
+    }
+
+    .contact {
+        margin-bottom: 220px;
+    }
+    
+    .form {
+        margin-bottom: 220px;
     }
 
     .maps {
@@ -637,5 +758,10 @@ form {
         display: flex;
         width: 1180px;
         height: 500px;
+    }
+
+    .address {
+        width: 640px;
+        text-align: center;
     }
 }
