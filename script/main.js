@@ -43,7 +43,43 @@ function nextImage2() {
 }
 
 /* function for notification send message / função para notificar envio da menssagem */
+const form = document.getElementById('form');
+const nome = document.getElementById('inputName');
+const email = document.getElementById('inputEmail');
+const phone = document.getElementById('inputPhone');
+const message = document.getElementById('inputMessage');
+const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-function enviar() {
-   alert('Mensagem enviada com sucesso ')
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    nameValidate();
+    emailValidate();
+    phoneValidate();
+    messageValidate();
+
+    alert("Mensagem enviada com sucesso !")
+});
+
+function nameValidate(){
+    if(nome.value.length < 5){
+        console.log("Seu nome deve conter mais que 3 caracteres.");
+    }
+}
+
+function emailValidate() {
+    if(emailRegex.test(email.value)){
+        console.log("");
+    }
+}
+
+function phoneValidate() {
+    if(phone.value.length < 11) {
+        console.log("Seu numero de telefone deve conter 11 números (apenas números).");
+    }
+}
+
+function messageValidate() {
+    if(message.value.length < 15){
+        console.log("Sua mensagem deve conter no minimo 15 caracteres");
+    }
 }

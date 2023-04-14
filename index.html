@@ -226,23 +226,23 @@
 
     <section>
         <div class="container-form">
-            <div class="form">
+            <div id="form" class="form">
                 <form action="https://api.staticforms.xyz/submit" method="post">
                     <input type="hidden" name="accessKey" value="543451ba-af42-4ba2-aea4-f7dccfbbebbe">
                     <input type="hidden" name="redirectTo" value="https://amadeuanjos.github.io/landing-page-teclins/">
 
                     <label for="">Nome</label>
-                    <input type="text" name="name" placeholder="Digite seu nome aqui" required><br>
+                    <input id="inputName" type="text" name="name" placeholder="Digite seu nome completo" required oninput="nameValidate()"><br>
                     <label for="">E-mail</label>
-                    <input type="text" name="email" placeholder="Digite seu email aqui" required><br>
+                    <input id="inputEmail" type="text" name="email" placeholder="Digite seu email aqui" required oninput="emailValidate()"><br>
                     <label for="">Telefone</label>
-                    <input type="text" name="phone" placeholder="Digite seu telefone aqui" required><br>
+                    <input id="inputPhone" type="text" name="phone" placeholder="Digite seu telefone aqui" required oninput="phoneValidate()"><br>
                     <label for="">Mensagem</label>
-                    <textarea name="message" id="" cols="30" rows="10"
+                    <textarea id="inputMessage" name="message" id="" cols="30" rows="10"
                         placeholder="Deixe sua mensagem para nós. Retonaremos o mais breve possível."
-                        style="resize: none;" required></textarea>
+                        style="resize: none;" required oninput="messageValidate()"></textarea>
                     <div class="botao">
-                        <button id="button-contact" onclick="enviar()">ENVIAR</button>
+                        <button id="button-contact" type="submit">ENVIAR</button>
                     </div>
                 </form>
             </div>
