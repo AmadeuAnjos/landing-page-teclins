@@ -19,6 +19,6 @@ After developing the graphical interface in Figma, I started to turn it into cod
 - [X] Create mobile-first banner 1.
 - [X] Create mobile-first banner 2.
 - [X] Create form mailto.
-- [] Create function to open mobile-first menu. 
-- [] Create function to confirm sending a message.
-- [] Create grid to show products.
+- [X] Create function to open mobile-first menu. 
+- [X] Create function to confirm sending a message.
+- [X] Create grid to show products.
