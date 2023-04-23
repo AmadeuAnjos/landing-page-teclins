@@ -18,7 +18,7 @@ Após desenvolver a interface gráfica no Figma, comecei a transformar em códig
 - [X] Criar link para whatsapp menu responsivo.
 - [X] Criar banner 1 mobile-first.
 - [X] Criar banner 2 mobile-first.
-- [X] Criar mailto do formulário.
+- [X] Criar mailto para email do formulário.
 - [X] Criar função para abrir menu mobile-first. 
 - [X] Criar função para confirmar envio de mensagem.
 - [X] Criar grid para mostrar produtos.
