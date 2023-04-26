@@ -22,3 +22,4 @@ Após desenvolver a interface gráfica no Figma, comecei a transformar em códig
 - [X] Criar função para abrir menu mobile-first. 
 - [X] Criar função para confirmar envio de mensagem.
 - [X] Criar grid para mostrar produtos.
+- [] Criar validação de formulário
